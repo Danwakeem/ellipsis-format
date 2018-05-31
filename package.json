@@ -1,0 +1,21 @@
+{
+  "name": "ellipsis-format",
+  "version": "0.0.1",
+  "description": "Master of none intro format",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.js"
+  },
+  "keywords": [
+    "ellipsis",
+    "text",
+    "format"
+  ],
+  "author": "Danwakeem",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.0.1",
+    "should": "^13.2.1"
+  }
+}
