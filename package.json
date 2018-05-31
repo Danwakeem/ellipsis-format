@@ -7,6 +7,10 @@
     "test": "mocha tests/*.js",
     "travis": "istanbul cover ./node_modules/mocha/bin/_mocha ./tests/*.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danwakeem/ellipsis-format"
+  },
   "keywords": [
     "ellipsis",
     "text",
