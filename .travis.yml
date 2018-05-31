@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '7'
+before_script:
+- npm install -g mocha
+- npm install -g istanbul
+script: npm run travis
+deploy:
+  provider: npm
+  email: danwakeem@gmail.com
+  api_key:
+    secure: AxvZyPn3gS4X7+Xr5OEetda7n+xScjPg4WofooLiA0udXjScIhZwgP4bK2Y2UNkAZLwzQOZhqdAPQlVSK2ZRyVSQqxSTclGWqPBnJVix4Afbd0FrusSIJ0bcp4yUqvQ68JiwTnAjilf3gv2QUAyOBZ8Zs8Gbiv1W35LGWMSr+n+eIX8RIOZY5GMrLUlVa5MqXkk+OKUq3A8dbWfAmrCVxGXe7yPY1IjBk/hyUhzUEJACfTLhidz8rk4FPHD6C4RbuWUnW1w/C2CYK8rFh8ZkjqejTbxIjFCB7V1VICY1aFopIOmE2SmUKsPzy5M8BKfwwnF5WUQVnUS2RSCtfxKm776mJL63LvdFF5H/uzT92DIPr30I4ivVAzxQwgwTLu76TMsar07RSjfnZemjYmpLP9B9fI7SeNCWTYQl7k4gYW1Tq1JLRoDrMWudPERboZ9kytMBkmwMDZhYsWs0mVRn+SevvAZPlztogEAOSTG+TUW+VKxOzsi09WDocT/SSYFB9rMgKS362YH8qV2xo+KfbMZh5XiEjfRmlm6sKrZM9arAk5VliROVl1X+o10yVhqaqGajczEJZcd9qJUNQW0V4OumK/qjAwjITeF1tZyHSL+pm6HayyUOmSpceJO3rfLvMTkWbzQkZlw70bF5kT7/KTMmtxTL7xx/LFRnkqoc2xs=
+  on:
+    repo: Danwakeem/ellipsis-format

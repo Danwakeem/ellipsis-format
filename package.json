@@ -4,7 +4,8 @@
   "description": "Master of none intro format",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test": "mocha tests/*.js",
+    "travis": "istanbul cover ./node_modules/mocha/bin/_mocha ./tests/*.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
     "ellipsis",
